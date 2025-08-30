@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>info-user</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon-users.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-info bg-gradient sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" target="_parent"><i class="bi bi-house-door-fill"></i>Casino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#informacion">
+                            <i class="bi bi-file-person-fill"></i> Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Configuracion"><i class="bi bi-gear-wide"></i>Configuracion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-menu-app-fill"></i>Opciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#Billetera"><i class="bi bi-cash-stack"></i>Billetera</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#Registro"><i class="bi bi-file-earmark-minus"></i>Registro
+                                    Transaccional</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#Actividad"><i class="bi bi-activity"></i>Actividad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"><i
+                                class="bi bi-person-lines-fill"></i>Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Billetera -->
+
+    <div id="Billetera" class="container bg-dark border rounded-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center text-white bg-primary bg-gradient border rounded-5 p-2 m-2"><i class="bi bi-cash-stack"></i>Billetera</h2>
+            </div>
+            <div class="col-12">
+                <h3 class="text-center text-white">Balance</h3>
+                <h3 class="text-center text-info">1000$</h3>
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <h2 class="text-center text-light">Abonos Totales: <span class="text-success">256.000$</span></h2>
+                <h2 class="text-center text-light">Retiros Totales: <span class="text-danger">200.000$</span></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Informacion -->
+
+    <div id="informacion" class="container text-center p-3 mt-5 bg-dark bg-gradient border-2 rounded-5">
+        <h2 class="h1 p-2 text-warning"><i class="bi bi-file-person-fill"></i>Informacion de Usuario</h2>
+        <div class="row g-2">
+            <div class="col-12">
+                <h3 class="text-primary">Imagen de perfil</h3>
+                <div class="p-1">
+                    <img src="assets/img/example.jpg" alt="Foto Perfil" class="img-fluid p-1 m-3 rounded-circle w-25" />
+                </div>
+            </div>
+            <div class="col-6 p-3">
+                <h3 class="text-primary">Nombre y Apellido</h3>
+                <div class="p-1">
+                    <h4 class="text-info">Jhon Doe</h4>
+                </div>
+            </div>
+            <div class="col-6 p-3">
+                <h3 class="text-primary">Alias</h3>
+                <div class="p-1">
+                    <h4 class="text-info">Jusepe</h4>
+                </div>
+            </div>
+            <div class="col-6 p-3">
+                <h3 class="text-primary">Pais</h3>
+                <div class="p-1">
+                    <h4 class="text-info">Nigeria</h4>
+                </div>
+            </div>
+            <div class="col-6 p-3">
+                <h3 class="text-primary">Telefono</h3>
+                <div class="p-1">
+                    <h4 class="text-info">123456789</h4>
+                </div>
+            </div>
+            <div class="col-12 p-3">
+                <button type="button" class="btn btn-outline-primary btn-lg m-5 p-3 border-2">
+                    Editrar Perfil
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-lg m-5 p-3 border-2">
+                    Eliminar Perfil
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Configuracion -->
+    <div id="Configuracion"
+        class="container container-fluid p-2 mt-5 bg-black bg-gradient border-2 rounded-5 pb-5 px-3">
+        <h2 class="h1 p-2 m-2 text-warning text-center"><i class="bi bi-gear-wide"></i>Configuracion</h2>
+        <div id="Tarjeta" class="container bg-info p-3 bg-gradient border-2 rounded-5">
+            <!-- Tarjetas -->
+            <h2 class="h2 p-2 bg-dark bg-gradient text-info text-center rounded-pill">Administrador de Tarjetas</h2>
+            <div id="Tarjetas Usuario" class="d-flex justify-content-evenly">
+                <div class="card">
+                    <div class="card-header bg-primary text-light text-center">Tarjeta Mama <span
+                            class="badge text-bg-warning">Seleccionada</span></div>
+                    <div class="card-body bg-black bg-gradient text-light rounded-bottom">
+                        <h5 class="card-title">Tipo: Credito</h5>
+                        <p class="card-text">Numero de tarjeta: 123456789</p>
+                        <p class="card-text">Codigo CVV: 532</p>
+                        <p class="card-text">Afiliacion: BancoPais</p>
+                        <p class="card-text">Validez: 2024 - 2025</p>
+                        <div class="d-flex justify-content-evenly flex-wrap">
+                            <a class="btn btn-success disabled">Usar</a>
+                            <a class="btn btn-danger">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-primary text-light text-center">Tarjeta Papa</div>
+                    <div class="card-body bg-black bg-gradient text-light rounded-bottom">
+                        <h5 class="card-title">Tipo: Debito</h5>
+                        <p class="card-text">Numero de tarjeta: 789123456</p>
+                        <p class="card-text">Codigo CVV: 325</p>
+                        <p class="card-text">Afiliacion: BancoRegion</p>
+                        <p class="card-text">Validez: 2024 - 2025</p>
+                        <div class="d-flex justify-content-evenly flex-wrap">
+                            <a class="btn btn-success">Usar</a>
+                            <a class="btn btn-danger">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-primary text-light text-center">Mi Tarjeta</div>
+                    <div class="card-body bg-black bg-gradient text-light rounded-bottom">
+                        <h5 class="card-title">Tipo: Debito</h5>
+                        <p class="card-text">Numero de tarjeta: 988717805</p>
+                        <p class="card-text">Codigo CVV: 322</p>
+                        <p class="card-text">Afiliacion: Macht</p>
+                        <p class="card-text">Validez: 2030</p>
+                        <div class="d-flex justify-content-evenly flex-wrap">
+                            <a class="btn btn-success">Usar</a>
+                            <a class="btn btn-danger">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg m-4 p-3 border-2">
+                    Agregar Tarjeta
+                </button>
+            </div>
+        </div>
+        <!-- Cambios Importantes -->
+        <div>
+            <div id="Contraseña" class="mt-5">
+                <h2 class="h2 p-1 bg-dark bg-gradient text-info text-center rounded">Cambio de Contraseña</h2>
+                <div class="alert alert-warning" role="alert">
+                    <p>Al cambiar tu contraseña, se te cerrara la sesion y se notificara por correo electronico la
+                        confirmacion.</p>
+                    <hr>
+                    <a class="mb-0 btn btn-danger">Cambiar Contraseña</a>
+                </div>
+            </div>
+            <div id="correo">
+                <h2 class="h2 p-1 bg-dark bg-gradient text-info text-center rounded">Cambio de Correo Electronico</h2>
+                <div class="alert alert-warning" role="alert">
+                    <p>Al cambiar tu correo electronico, se te cerrara la sesion y se notificara por numero telefonico
+                        la
+                        confirmacion.</p>
+                    <hr>
+                    <a class="mb-0 btn btn-danger">Cambiar Correo Electronico</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Actividad -->
+    <div id="Actividad" class="container container-fluid p-2 mt-5 bg-black bg-gradient border-2 rounded-5">
+        <h2 class="h1 p-1 text-warning text-center"><i class="bi bi-activity"></i>Actividad</h2>
+        <div class="d-flex justify-content-center flex-wrap gap-5">
+            <div>
+                <h2 class="h2 text-center text-info">Juego mas Jugado</h2>
+                <h3 class="text-center text-light p-1 ">Ruleta</h3>
+            </div>
+
+            <div>
+                <h2 class="h2 text-center text-info">Juego mas Ganado</h2>
+                <h3 class="text-center text-light p-1 ">BlackJack</h3>
+            </div>
+
+            <div>
+                <h2 class="h2 text-center text-info">Metricas</h2>
+                <h3 class="text-center text-success p-1">Win-Rate: <span class="text-success">30%</span></h3>
+                <h3 class="text-center text-danger p-1">Loss-Rate: <span class="text-danger">70%</span></h3>
+            </div>
+
+            <div>
+                <h2 class="h2 text-center text-info">Premio mas alto: </h2>
+                <h3 class="text-center text-light p-1">15.000$</h3>
+            </div>
+
+            <div>
+                <h2 class="h2 text-center text-info">Inversion mas alta: </h2>
+                <h3 class="text-center text-light p-1">20.000$</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Movimientos Financieros -->
+    <div id="Registro" class="bg-dark bg-gradient border-2 rounded-5 container container-fluid p-2 mt-5">
+        <h2 class="h1 p-1 text-warning text-center"><i class="bi bi-file-earmark-minus"></i>Tus Movimientos</h2>
+        <div class="d-flex justify-content-evenly">
+            <div id="retiros">
+                <ul class="list-group bg-black bg-gradient pb-3">
+                    <h2 class="text-center text-white pt-3">Retiros</h2>
+                    <li class="list-group-item bg-success bg-gradient text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 10.000$</h3>
+                        <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                    </li>
+                    <li class="list-group-item bg-success bg-gradient text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 20.000$</h3>
+                        <h3>Fecha: 30/05/2023 - 10:00 am</h3>
+                    </li>
+                    <li class="list-group-item bg-success bg-gradient text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 15.000$</h3>
+                        <h3>Fecha: 05/01/2024 - 17:00 pm</h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="depositos">
+                <ul class="list-group bg-black bg-gradient pb-3">
+                    <h2 class="text-center text-white pt-3">Depositos</h2>
+                    <li class="list-group-item bg-success  text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 10.000$</h3>
+                        <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                    </li>
+                    <li class="list-group-item bg-success  text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 20.000$</h3>
+                        <h3>Fecha: 30/05/2023 - 10:00 am</h3>
+                    </li>
+                    <li class="list-group-item bg-success  text-white mx-3 my-2 rounded p-2">
+                        <h3>Retiro: 15.000$</h3>
+                        <h3>Fecha: 05/01/2024 - 17:00 pm</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Jugadas" class="bg-primary mx-5 rounded-3 my-4">
+            <h2 class="h1 p-2 mt-3 text-light text-center">Jugadas</h2>
+            <ul class="list-group  text-center mx-4 pb-3">
+                <li class="list-group-item py-3 bg-danger bg-gradient">
+                    <h3>Juego: Ruleta</h3>
+                    <h3>Apuesta: 10.000$ ; Resultado: -10.000</h3>
+                    <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                </li>
+                <li class="list-group-item py-3 bg-success bg-gradient">
+                    <h3>Juego: BlackJack</h3>
+                    <h3>Apuesta: 25.000$ ; Resultado: +75.000$</h3>
+                    <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                </li>
+                <li class="list-group-item py-3 bg-danger bg-gradient">
+                    <h3>Juego: Jackpot</h3>
+                    <h3>Apuesta: 10.000$ ; Resultado: -10.000</h3>
+                    <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                </li>
+                <li class="list-group-item py-3 bg-danger bg-gradient">
+                    <h3>Juego: Ruleta</h3>
+                    <h3>Apuesta: 10.000$ ; Resultado: -10.000</h3>
+                    <h3>Fecha: 19/05/2023 - 10:00 pm</h3>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>

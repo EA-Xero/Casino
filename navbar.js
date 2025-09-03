@@ -7,7 +7,7 @@ elemento.innerHTML = `<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-info bg-gradient sticky-top">
         <!-- Recuerda cambiar sticky-top a fixed-top -->
         <div class="container-fluid"> <!-- Aca no -->
-            <a class="navbar-brand" href="landing.html" target="_parent"><img src="C:\Users\kille\Downloads\Fucasino logo.png" style="height:50px; width:80px;"><\img></img></a>
+            <a class="navbar-brand" href="landing.html" target="_parent"><img src="assets/img/Fucasino_logo.png" style="height:50px; width:80px;"><\img></img></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

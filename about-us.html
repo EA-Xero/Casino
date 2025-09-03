@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon-users.png" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-info bg-gradient sticky-top">
         <!-- Recuerda cambiar sticky-top a fixed-top -->
         <div class="container-fluid"> <!-- Aca no -->
-            <a class="navbar-brand" href="landing.html" target="_parent"><img
-                    src="" style="height:50px; width:80px;"></a>
+            <a class="navbar-brand" href="landing.html" target="_parent"><img src="assets/img/Fucasino_logo.png"
+                    style="height:50px; width:80px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,45 +25,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center w-100"> <!-- Aca cambiamos el margen-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Pie de pagina"><i
+                        <a class="nav-link active" aria-current="page" href="#perfiles"><i
                                 class="bi bi-file-person-fill"></i> Informacion</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"><i class="bi bi-dice-6-fill"></i></i> Juegos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#ruleta.html"><i class="bi bi-bullseye"></i> Ruleta</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#blackjack.html"><i class="bi bi-suit-spade"></i>
-                                    Blackjack</a>
-                            </li>
-                            <a class="dropdown-item" href="#slots.html"></i>🎰 Slots</a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#TyC"><i
-                                class="bi bi-bricks"></i>
-                            </i> Términos</a> <!-- Esto abre un modal, no una pagina -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#objetivo"><i
+                                class="bi bi-bullseye"></i> Objetivo</a>
                     </li>
                 </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " aria-disabled="false" href="#sobrenosotros.html"><i
-                            class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
-                </li>
-
             </div>
-            <button class="btn btn-outline-light me-2" type="button"><i class="fa-regular fa-address-card"></i></i>
-                Usuario</button>
         </div>
     </nav>
 
-    <h2 class="h1 text-warning bg-black text-center mb-5">Equipo de desarrollo</h2>
+    <h2 class="h1 text-warning bg-black text-center m-0">Equipo de desarrollo</h2>
     <div id="perfiles" class="d-flex justify-content-evenly bg-black bg-gradient mt-0">
         <div id="perfil1" class="d-flex flex-column align-items-center bg-black bg-gradient gap-3 w-25 overflow-auto">
             <h2 class="text-info">Eduardo Alarcón</h2>
@@ -71,9 +46,14 @@
             <h3 class="h3 text-info-emphasis text-center">Ingeniero Civil en Informatica y Telecomunicaciones</h3>
             <h3 class="h3 text-info">Estudios:</h3>
             <div class="list-group m-2">
-                <a href="https://www.udp.cl/" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action active" aria-current="true">Universidad Diego Portales</li>
-                <a href="https://desafiolatam.com/" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action">Bootcamp Desafio Latam</li>
-                <a href="https://www.colegiosseg.cl/paae" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action">Liceo Albert Einstein</li>
+                <a href="https://www.udp.cl/" target="_blank"
+                    class="h4 text-info-emphasis list-group-item list-group-item-action active text-center"
+                    aria-current="true">Universidad Diego Portales</li>
+                    <a href="https://desafiolatam.com/" target="_blank"
+                        class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Bootcamp Desafio Latam</li>
+                        <a href="https://www.colegiosseg.cl/paae" target="_blank"
+                            class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Liceo Albert Einstein
+                            </li>
             </div>
             <h3 class="text-center m-2 text-info h3">Tecnologias</h3>
             <div class="mt-2 p-2">
@@ -85,34 +65,47 @@
             <a href="portafolio.html" class="btn btn-outline-primary p-3 m-2">Portafolio</a>
         </div>
         <div id="perfil2" class="d-flex flex-column align-items-center bg-black bg-gradient gap-3 w-25 overflow-auto">
-            <h2 class="text-info text-center">Eduardo Alarcón</h2>
-            <img src="perfil" alt="foto de perfil">
-            <h3 class="h3 text-info text-center">Ocupacion:</h3>
+            <h2 class="text-info text-center">Oscar Rodrìguez</h2>
+            <img src="perfilrodriguez" alt="foto de perfil">
+            <h3 class="h3 text-info text-center">Ocupacion: Estudiante</h3>
             <h3 class="h3 text-info-emphasis text-center">Ingeniero Civil en Informatica y Telecomunicaciones</h3>
             <h3 class="h3 text-info text-center">Estudios:</h3>
             <div class="list-group m-2">
-                <a href="https://www.udp.cl/" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action active text-center" aria-current="true">Universidad Diego Portales</li>
-                <a href="https://desafiolatam.com/" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Bootcamp Desafio Latam</li>
-                <a href="https://www.colegiosseg.cl/paae" target="_blank" class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Liceo Albert Einstein</li>
+                <a href="https://www.udp.cl/" target="_blank"
+                    class="h4 text-info-emphasis list-group-item list-group-item-action active text-center"
+                    aria-current="true">Universidad Diego Portales</li>
+                    <a href="https://youtube.com/kukari7" target="_blank"
+                        class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Youtube Editor
+                        </li>
+                        <a href="https://www.instagram.com/oscocos25" target="_blank"
+                            class="h4 text-info-emphasis list-group-item list-group-item-action text-center">Instagrammer
+                            </li>
             </div>
-            <h3 class="text-center m-2 text-info h3">Tecnologias</h3>
+            <h3 class="text-center m-2 mb-0 text-info h3">Tecnologias</h3>
             <div class="mt-2 p-2">
-                <p class="text-decoration-none h4 text-info-emphasis text-center">HTML \ CSS\ jS</p>
-                <p class="text-decoration-none h4 text-info-emphasis text-center">React \ Angular</p>
-                <p class="text-decoration-none h4 text-info-emphasis text-center">PostgreSQL \ SQL Server</p>
-                <p class="text-decoration-none h4 text-info-emphasis text-center">NodeJS \ ExpressJS</p>
+                <p class="text-decoration-none h4 text-info-emphasis text-center">HTML \ CSS\ JS</p>
+                <p class="text-decoration-none h4 text-info-emphasis text-center">C++ / Java (OOP) </p>
+                <p class="text-decoration-none h4 text-info-emphasis text-center">Premiere Pro / DaVinci Resolve
+                    (intermedio)</p>
+                <p class="text-decoration-none h4 text-info-emphasis text-center">Photoshop (Basico)</p>
             </div>
-            <a href="portafolio.html" class="btn btn-outline-primary p-3 m-2 text-center rounded-3">Portafolio</a>
+            <a href="portafolio2.html" class="btn btn-outline-primary p-3 text-center rounded-3 mb-5">Portafolio</a>
         </div>
     </div>
-    <div id="objetivo" class="bg-warning m-3 p-2" style="--bs-bg-opacity: .1;">
-        <p class="h4 text-info text-start  text-center">Este proyecto es enteramente con fines educativos, permitiendo la interaccion en equipo entre desarrolladores utilizando tecnologias como github y utilizando las tecnologias de maquetado como HTML y CSS en sincronica
-
+    <div id="objetivo" class="bg-warning mx-5 px-3 my-4 py-3" style="--bs-bg-opacity: .1;">
+        <p class="h4 text-info text-start  text-center ">
+            Este proyecto consiste en la creación de un simulador de casino con fines
+            exclusivamente académicos. Su propósito es fomentar la interacción y el
+            trabajo colaborativo entre desarrolladores, aplicando el uso de herramientas
+            de control de versiones como GitHub, junto con tecnologías de maquetado como
+            HTML y CSS. A través de este proyecto, se busca reforzar habilidades técnicas
+            y prácticas en un entorno de desarrollo realista, sin ningún objetivo
+            comercial.
         </p>
     </div>
     <div id="Tecnologias"></div>
     <div id="footer"></div>
-    
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

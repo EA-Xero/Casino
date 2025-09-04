@@ -4,7 +4,7 @@ function getMenu(_id){
 
 const elemento = document.getElementById(_id);
 elemento.innerHTML = `<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-info bg-gradient sticky-top">
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
         <!-- Recuerda cambiar sticky-top a fixed-top -->
         <div class="container-fluid"> <!-- Aca no -->
             <a class="navbar-brand" href="landing.html" target="_parent"><img src="https://github.com/EA-Xero/Casino/blob/9e3a7d4af333e477c805b00630d26fb4faf8ded7/assets/img/Fucasino_logo.png?raw=true" style="height:50px; width:80px;"><\img></img></a>
@@ -42,11 +42,11 @@ elemento.innerHTML = `<!-- Navbar -->
                 </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-disabled="false" href="#about-us.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
+                    <a class="nav-link " aria-disabled="false" href="about-us.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
                 </li>
                 
             </div>
-            <button class="btn btn-outline-light me-2" type="button" onclick="window.location.href = 'auth.html'"><i class="fa-regular fa-address-card"></i></i> Usuario</button> <!-- boton de usuario, necesario para login-->
+            <button class="btn btn-outline-light m-2" type="button" onclick="window.location.href = 'auth.html'"><i class="fa-regular fa-address-card"></i></i> Usuario</button> <!-- boton de usuario, necesario para login-->
         </div>
     </nav>
 
@@ -195,7 +195,7 @@ Al presionar "Entendido, quiero jugar", usted confirma que ha leído y acepta nu
                                 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No acepto, no quiero jugar</button> <!-- Este boton cierra el modal -->
-                    <button type="button" class="btn btn-primary" onclick="window.location.href = '#ruleta.html'">Entendido, quiero jugar</button> <!-- Este boton redirige a ruleta.html -->
+                    <button type="button" class="btn btn-primary" onclick="window.location.href = 'ruleta.html'">Entendido, quiero jugar</button> <!-- Este boton redirige a ruleta.html -->
                 </div>
         </div>
     </div>

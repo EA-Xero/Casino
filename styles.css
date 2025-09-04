@@ -87,19 +87,3 @@
             display: flex;
             flex-wrap: wrap;
         }
-
-        .ruleta {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            height: 100vh;
-            background-color: #1a1a2e;
-        }
-
-        .blackjack {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1a1a2e;
-        }

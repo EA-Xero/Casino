@@ -7,7 +7,7 @@ elemento.innerHTML = `<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-info bg-gradient sticky-top">
         <!-- Recuerda cambiar sticky-top a fixed-top -->
         <div class="container-fluid"> <!-- Aca no -->
-            <a class="navbar-brand" href="landing.html" target="_parent"><img src="C:\Users\kille\Downloads\Fucasino logo.png" style="height:50px; width:80px;"><\img></img></a>
+            <a class="navbar-brand" href="landing.html" target="_parent"><img src="https://github.com/EA-Xero/Casino/blob/9e3a7d4af333e477c805b00630d26fb4faf8ded7/assets/img/Fucasino_logo.png?raw=true" style="height:50px; width:80px;"><\img></img></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ elemento.innerHTML = `<!-- Navbar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center w-100"> <!-- Aca cambiamos el margen-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Pie de pagina"><i
+                        <a class="nav-link active" aria-current="page" href="#piedepagina"><i
                                 class="bi bi-file-person-fill"></i> Información</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -25,28 +25,28 @@ elemento.innerHTML = `<!-- Navbar -->
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#ruleta.html"><i class="bi bi-bullseye"></i> Ruleta</a>
+                                <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#ruletaregla"><i class="bi bi-bullseye"></i> Ruleta</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#blackjack.html"><i class="bi bi-suit-spade"></i> Blackjack</a>
+                                <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#blackjackregla"><i class="bi bi-suit-spade"></i> Blackjack</a>
                             </li>
-                            <a class="dropdown-item" href="#slots.html"></i>🎰 Slots</a>
+                            <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#slotsregla"></i>🎰 Slots</button>
                     </li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
                     <li>
-                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#TyC"><i class="bi bi-bricks"></i>
-                        </i> Términos</a> <!-- Esto abre un modal, no una pagina -->
+                        <button class="btn bg-transparent w-100 " data-bs-toggle="modal" data-bs-target="#TyC"><i class="bi bi-bricks"></i>
+                        </i> Términos</button> <!-- Esto abre un modal, no una pagina -->
                     </li>
                 </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-disabled="false" href="#sobrenosotros.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
+                    <a class="nav-link " aria-disabled="false" href="#about-us.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
                 </li>
                 
             </div>
-            <button class="btn btn-outline-light me-2" type="button"><i class="fa-regular fa-address-card"></i></i> Usuario</button> <!-- boton de usuario, necesario para login-->
+            <button class="btn btn-outline-light me-2" type="button" onclick="window.location.href = 'auth.html'"><i class="fa-regular fa-address-card"></i></i> Usuario</button> <!-- boton de usuario, necesario para login-->
         </div>
     </nav>
 
@@ -128,4 +128,77 @@ Estos términos se rigen por las leyes de Chile y cualquier disputa se resolver�
                 </div>
             </div>
         </div>
-    </div> `; }
+    </div> 
+    
+    <div class="modal fade" id="ruletaregla" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ruletaregla" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-black" id="ruletaregla">Reglas Ruleta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                                    
+                <div class="modal-body">
+                    <strong> Ultima actualizacion: 30 de Agosto del 2025</strong>
+                    <pre class="overflow-y-scroll " style="height: 400px;">
+1. Generalidades
+
+1.1. La Ruleta Europea se juega con una rueda numerada del 0 al 36, lo que da un total de 37 casillas.
+1.2. Los números del 1 al 36 alternan entre rojo y negro, mientras que el 0 es de color verde.
+1.3. El objetivo del juego es predecir en qué número o tipo de casilla caerá la bola después de que la rueda sea girada.
+
+2. Mecánica del juego
+
+2.1. El jugador selecciona el valor de sus fichas y realiza las apuestas sobre el tapete virtual antes de que se cierre la ronda.
+2.2. Una vez cerradas las apuestas, se hace girar la rueda y se lanza la bola en sentido contrario.
+2.3. Cuando la bola se detiene en una casilla, el sistema determina automáticamente las apuestas ganadoras y paga de acuerdo a la tabla de premios.
+
+3. Tipos de apuestas
+Nuestro casino está limitado al siguiente tipo de apuestas:
+
+Apuestas interiores (Inside Bets)
+
+- Pleno (Straight Up): Apuesta a un solo número (paga 35:1).
+
+Apuestas exteriores (Outside Bets)
+
+- Rojo / Negro: Apuesta al color (paga 1:1).
+
+- Par / Impar: Apuesta a la paridad (paga 1:1).
+
+- Falta (1–18) / Pasa (19–36): Apuesta al rango bajo o alto (paga 1:1).
+
+4. Pagos
+
+Los pagos se realizan inmediatamente después de determinar el número ganador.
+
+Si la bola cae en 0, todas las apuestas exteriores pierden.
+
+5. Reglas adicionales
+
+5.1. Tiempo de apuesta: El sistema establece un tiempo límite para realizar apuestas antes de cada giro.
+5.2. Cierre de apuestas: Una vez cerrada la ronda, no se podrán modificar ni cancelar apuestas.
+5.3. Integridad del juego: El generador de números aleatorios (RNG) garantiza resultados justos y aleatorios en cada giro.
+5.4. Errores técnicos: En caso de fallo técnico, todas las apuestas en curso se anularán y se devolverán las fichas correspondientes.
+
+6. Condiciones de uso
+
+La participación en el juego implica la aceptación de estas reglas.
+
+El jugador es responsable de administrar su saldo y realizar apuestas de acuerdo con sus posibilidades.
+
+El casino se reserva el derecho de modificar estas reglas, ambos con y sin previo aviso.
+
+Al presionar "Entendido, quiero jugar", usted confirma que ha leído y acepta nuestros términos y condiciones.
+                    </pre>
+                </div>
+                                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No acepto, no quiero jugar</button> <!-- Este boton cierra el modal -->
+                    <button type="button" class="btn btn-primary" onclick="window.location.href = '#ruleta.html'">Entendido, quiero jugar</button> <!-- Este boton redirige a ruleta.html -->
+                </div>
+        </div>
+    </div>
+</div>
+    
+    `; }

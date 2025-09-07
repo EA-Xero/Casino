@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fucasino</title>
+    <title>Landing page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,6 +38,28 @@
             </div>
         </div>
 
+        <!-- Modal Reglas Ruleta -->
+        <div class="modal fade" id="ruletaregla" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="ruletaregla" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-black" id="ruletaregla">Reglas Ruleta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No acepto, no quiero
+                            jugar</button> <!-- Este boton cierra el modal -->
+                        <button type="button" class="btn btn-primary"
+                            onclick="window.location.href = 'ruleta.html'">Entendido, quiero jugar</button>
+                        <!-- Este boton redirige a ruleta.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Imagen 2 -->
         <div class="col-md-4">
             <div class="game-card image-hover-container">
@@ -50,7 +72,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- Imagen 3 -->
         <div class="col-md-4 pe-0">
@@ -64,7 +85,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
         <footer id="piedepagina">
             <!-- El pie de página se carga aquí con JavaScript -->

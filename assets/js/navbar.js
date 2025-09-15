@@ -3,11 +3,11 @@ getMenu('navbar');
 function getMenu(_id){
 
 const elemento = document.getElementById(_id);
+const URL = 'assets/img/Fucasino-logo.png';
 elemento.innerHTML = `<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-success sticky-top">
-        <!-- Recuerda cambiar sticky-top a fixed-top -->
         <div class="container-fluid"> <!-- Aca no -->
-            <a class="navbar-brand" href="landing.html" target="_parent"><img src="https://github.com/EA-Xero/Casino/blob/9e3a7d4af333e477c805b00630d26fb4faf8ded7/assets/img/Fucasino_logo.png?raw=true" style="height:50px; width:80px;"><\img></img></a>
+            <a class="navbar-brand" href="landing.html" target="_parent"><img src="${URL}" style="height:50px; width:80px;"></img></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -16,33 +16,33 @@ elemento.innerHTML = `<!-- Navbar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center w-100"> <!-- Aca cambiamos el margen-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#piedepagina"><i
+                        <a class="nav-link text-white" aria-current="page" href="#piedepagina"><i
                                 class="bi bi-file-person-fill"></i> Información</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false"><i class="bi bi-dice-6-fill"></i></i> Juegos
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu text-white bg-dark border border-info rounded-2">
                             <li>
-                                <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#ruletaregla"><i class="bi bi-bullseye"></i> Ruleta</a>
+                                <button class="btn bg-transparent w-100 text-white" data-bs-toggle="modal" data-bs-target="#ruletaregla"><i class="bi bi-bullseye"></i> Ruleta</a>
                             </li>
                             <li>
-                                <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#blackjackregla"><i class="bi bi-suit-spade"></i> Blackjack</a>
+                                <button class="btn bg-transparent w-100 text-white" data-bs-toggle="modal" data-bs-target="#blackjackregla"><i class="bi bi-suit-spade"></i> Blackjack</a>
                             </li>
-                            <button class="btn bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#slotsregla"></i>🎰 Slots</button>
+                            <button class="btn bg-transparent w-100 text-white" data-bs-toggle="modal" data-bs-target="#slotsregla"></i>🎰 Slots</button>
                     </li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
                     <li>
-                        <button class="btn bg-transparent w-100 " data-bs-toggle="modal" data-bs-target="#TyC"><i class="bi bi-bricks"></i>
+                        <button class="btn bg-transparent w-100 text-white" data-bs-toggle="modal" data-bs-target="#TyC"><i class="bi bi-bricks"></i>
                         </i> Términos</button> <!-- Esto abre un modal, no una pagina -->
                     </li>
                 </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-disabled="false" href="about-us.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
+                    <a class="nav-link text-white" aria-disabled="false" href="about-us.html"><i class="bi bi-info-circle-fill"></i></i> Sobre Nosotros</a>
                 </li>
                 
             </div>

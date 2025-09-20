@@ -52,3 +52,12 @@ Fucasino/
 │── backend/        # Lógica del servidor y API
 │── database/       # Scripts de base de datos
 │── README.md       # Este archivo, lleno de buena onda 🎉
+```bash
+
+##👥Colaboradores
+│── Eduardo Alarcón : Ea-Xero
+│── Nombre de tu compañero : O-S-C-A-T
+
+##⚠️ Nota importante
+Este proyecto es solo con fines educativos.
+No se promueve el juego con dinero real, apuestas reales ni transacciones fuera del ambiente de prueba. 💡

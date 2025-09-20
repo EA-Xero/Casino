@@ -7,7 +7,7 @@ const URL = 'assets/img/Fucasino-logo.png';
 elemento.innerHTML = `<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-success sticky-top">
         <div class="container-fluid"> <!-- Aca no -->
-            <a class="navbar-brand" href="landing.html" target="_parent"><img src="${URL}" style="height:50px; width:80px;"></img></a>
+            <a class="navbar-brand" href="index.html" target="_parent"><img src="${URL}" style="height:50px; width:80px;"></img></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
